@@ -1,0 +1,81 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body{
+      background-color: #f2eecb;
+      font-family: Arial, Helvetica, sans-serif;
+  }
+  .container{
+      margin-top: 50px;
+      width: 50%;
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+  .result{
+      min-height: 47px;
+      justify-content: flex-end;
+      display: flex;
+      align-items: center;
+      border: 1px solid  #aaa;
+      border-radius: 10px;
+      padding: 5px;
+      overflow: hidden;
+  }
+  .result-content{
+      display: inline-flex;
+      align-items: center;
+  }
+  .digital{
+      margin-top: 20px;
+      display: grid;
+      
+      grid-template-areas:
+      "q q w w "
+      "a s d f"
+      "g h j k"
+      "z x c v"
+      "b n m l";
+      row-gap: 10px;
+      column-gap: 10px;
+  }
+  .key{
+      width: 100%;
+      padding: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10px;
+      border: 1px solid  #aaa;
+      background-color: #eeeeff;
+  }
+  .logic{
+      background-color: #abda84;
+  }
+  .eq{
+    background-color: #848dda;   
+  }
+  .key:hover{
+      cursor: pointer;
+    background-color: #9494f573;
+    color: #794646;
+  }
+  .logic:hover{
+    background-color: #abda8480;
+  }
+  .eq:hover{
+    background-color: #2134dbb0;   
+  }
+  .cls{
+    grid-area: q;
+  }
+  .divide{
+    grid-area: w;
+  }
+  @media only screen and (max-width: 400px) {
+    .row{
+      width: fit-content;
+    }
+  }
